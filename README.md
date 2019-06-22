@@ -22,6 +22,16 @@ chmod +x check-services.sh
 - Edit check `check-services.sh` and use your own configuration.
 - Add cron to run script periodically. Make sure the user running the cron have permission to start services.
 
+```cron
+# Cron example
+
+MAILTO=""
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+
+* * * * * root /root/check-services/check-services.sh
+```
+
 ## Author
 
 👤 **Kong Jin Jie**
