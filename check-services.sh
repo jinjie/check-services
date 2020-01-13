@@ -24,7 +24,7 @@ which mail > /dev/null
 
 if [ $? != 0 ];
 then
-    echo "Command systemctl not found. Exit."
+    echo "Command mail not found. Exit."
     exit;
 fi
 
